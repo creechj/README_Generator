@@ -12,3 +12,6 @@ https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
 file system/writefile:
 https://nodejs.org/api/fs.html#filehandlewritefiledata-options
+
+licenses:
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#file-license-badges-md

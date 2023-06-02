@@ -1,8 +1,12 @@
-// require packages needed for application: inquirer, fs, & generateMarkdown
+// Require packages needed for application: inquirer, fs, & generateMarkdown
 const inquirer = require('inquirer')
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown')
 
+// Array for list of licenses to choose from
+const licenseoptions = [
+    'Apache 2.0 License','Boost Software License 1.0','BSD 3-Clause License','BSD 2-Clause License','CC0','Attribution 4.0 International','Attribution-ShareAlike 4.0 International','Attribution-NonCommercial 4.0 International','Attribution-NoDerivates 4.0 International','Attribution-NonCommmercial-ShareAlike 4.0 International','Attribution-NonCommercial-NoDerivatives 4.0 International','Eclipse Public License 1.0','GNU GPL v3','GNU GPL v2','GNU AGPL v3','GNU LGPL v3','GNU FDL v1.3','The Hippocratic License 2.1','The Hippocratic License 3.0','IBM Public License Version 1.0','ISC License (ISC)','The MIT License','Mozilla Public License 2.0','Attribution License (BY)','Open Database License (ODbL)','Public Domain Dedication and License (PDDL)','The Perl License','The Artistic License 2.0','SIL Open Font License 1.1','The Unlicense','The Do What the Fuck You Want to Public License', 'The zlib/libpng License'
+]
 
 // Array of questions for user input
 const questions = [
@@ -41,15 +45,15 @@ const questions = [
     message: 'What tests can be run on this application?',
     name: 'tests',
     },
-    // {
-    // type: 'list',
-    // message: 'Which license would you like to include for this application?',
-    // name: 'license',
-    // choices: [],
-    // },
+    {
+    type: 'list',
+    message: 'Which license would you like to include for this application?',
+    name: 'license',
+    choices: licenseoptions,
+    },
 ];
 
-// TODO: Create a function to write README file
+// writeFile for creating README with response data
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
@@ -57,8 +61,9 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: Create a function to initialize app
+// Triggers prompt questions and passes responses to generated README file
 function init() {
+    console.log('Welcome to the README Generator. Please provide responses to create your README');
     inquirer.prompt(questions).then((response) => {
         console.log(generateMarkdown(response))
         writeToFile('README_TEST.md', generateMarkdown(response))
