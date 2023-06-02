@@ -13,7 +13,7 @@ const questions = [
     },
     {
     type: 'input',
-    message: 'Briefly describe the project\'s purpose',
+    message: 'Briefly describe the project\'s purpose:',
     name: 'description',
     },
     {
@@ -28,8 +28,13 @@ const questions = [
     },
     {
     type: 'input',
+    message: 'What resources should be crediting for developing this application?',
+    name: 'credits',
+    },
+    {
+    type: 'input',
     message: 'How should developers contribute to this project?',
-    name: 'contributions',
+    name: 'contributing',
     },
     {
     type: 'input',
@@ -45,12 +50,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) =>
-        console.log(response)
+        console.log(generateMarkdown(response))
+        // writeToFile('README.md', generateMarkdown(response))
     )
 }
 
