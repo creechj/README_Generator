@@ -6,7 +6,9 @@ Command line application for generating a README
 
 ## Usage  
 
-This application allows users to create a README from a command line by responding to prompts. Provided responses are appropriately inserted into sections of a README file that is generated upon completion of the list of questions.  
+This application allows users to create a README from a command line by responding to prompts. Provided responses are appropriately inserted into sections of a README file that is generated upon completion of the list of questions.
+
+Note: inquirer should be installed and initialized to utilize this application.
 
 GitHub repository for the site can be found here: https://github.com/creechj/README_Generator
 
