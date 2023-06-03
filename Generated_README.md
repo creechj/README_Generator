@@ -1,10 +1,10 @@
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)  
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
   
 # README Generator  
   
 ## Description  
 
-Generate README from command line  
+Create README from command line  
 
 ## Table of Contents  
 
@@ -22,7 +22,7 @@ download application from GitHub
 
 ## Usage  
 
-Application is accessed from command line using node  
+Application is accessed from command line. Follow prompts to create a README  
 
 ## Credits  
 
@@ -30,7 +30,7 @@ mdn, w3schools, . . .
 
 ## Contributing  
 
-reach out via GitHub for contribution information  
+See GitHub repo for contribution info  
 
 ## Tests  
 
@@ -38,8 +38,8 @@ no tests have been created for this application yet
 
 ## License  
 
-This application is covered by license: CC0  
-http://creativecommons.org/publicdomain/zero/1.0/  
+This application is covered by license: Attribution-ShareAlike 4.0 International  
+https://creativecommons.org/licenses/by-sa/4.0/  
 
 ## Questions  
 

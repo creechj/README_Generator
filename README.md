@@ -12,7 +12,12 @@ Note: inquirer should be installed and initialized to utilize this application.
 
 GitHub repository for the site can be found here: https://github.com/creechj/README_Generator
 
-![Video of Application](INSERT VIDEO LINK HERE)
+Video demo of Application:
+https://drive.google.com/file/d/1lF8Vr8TEuQlN4gpYljDS48NmDyADqK9r/view  
+
+
+![Screenshot of Application](/utils/README_Generator_Screenshot.png)
+
 
 ## Credits
 
