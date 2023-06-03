@@ -51,6 +51,16 @@ const questions = [
     name: 'license',
     choices: licenseoptions,
     },
+    {
+    type: 'input',
+    message: 'What is your GitHub username?',
+    name: 'github',
+    },
+    {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email',
+    },
 ];
 
 // writeFile for creating README with response data
@@ -61,12 +71,12 @@ function writeToFile(fileName, data) {
     })
 }
 
-// Triggers prompt questions and passes responses to generated README file
+// Triggers prompt for questions and passes responses to generated README file
 function init() {
     console.log('Welcome to the README Generator. Please provide responses to create your README');
     inquirer.prompt(questions).then((response) => {
         console.log(generateMarkdown(response))
-        writeToFile('README_TEST.md', generateMarkdown(response))
+        writeToFile('Generated_README.md', generateMarkdown(response))
     })
 }
 

@@ -206,7 +206,7 @@ ${renderLicenseLink(license)}`
 function generateMarkdown(data) {
   return `${renderLicenseBadge(data.license)}  
   
-  # ${data.title}  
+# ${data.title}  
   
 ## Description  
 
@@ -220,6 +220,7 @@ ${data.description}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation  
 
@@ -243,8 +244,14 @@ ${data.tests}
 
 ## License  
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}  
 
+## Questions  
+
+Please contact me via GitHub or email for any additional questions:  
+
+GitHub: https://github.com/${data.github}  
+Email: ${data.email}
 `;
 }
 
