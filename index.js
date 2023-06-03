@@ -75,7 +75,6 @@ function writeToFile(fileName, data) {
 function init() {
     console.log('Welcome to the README Generator. Please provide responses to create your README');
     inquirer.prompt(questions).then((response) => {
-        console.log(generateMarkdown(response))
         writeToFile('Generated_README.md', generateMarkdown(response))
     })
 }
