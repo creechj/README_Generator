@@ -32,7 +32,7 @@ const questions = [
     },
     {
     type: 'input',
-    message: 'What resources should be crediting for developing this application?',
+    message: 'What resources should be credited for developing this application?',
     name: 'credits',
     },
     {
